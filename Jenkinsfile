@@ -1,7 +1,7 @@
 pipeline{
     agent any
-    stages{
-        stages('build'){
+    stages {
+        stage('build'){
             steps{
                 bat 'mvn clean verify'
             }
